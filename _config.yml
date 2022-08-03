@@ -30,9 +30,9 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Rome # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -103,6 +103,8 @@ defaults:
       comments: true
       share: true
       related: true
+    # header:
+    #   image: splash/1.jpg      
   # _pages
   - scope:
       path: "_pages"
@@ -110,6 +112,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+    # header:
+    #   image: splash/1.jpg
 
 category_archive:
   type: liquid
