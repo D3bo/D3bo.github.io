@@ -33,10 +33,21 @@ permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Rome # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+repository: "d3bo/d3bo.github.io"
 include:
   - _pages
 
+#head_scripts:
+#  - https://code.jquery.com/jquery-3.2.1.min.js
+#  - /assets/js/your-custom-head-script.js
+#
+##POST FRONT MATTER
+#header: This image can be overridden at anytime by applying the following to a document’s YAML Front Matter.
+#  teaser: /assets/images/my-awesome-post-teaser.jpg
+
+
+
+#logo: "/assets/images/88x88.png" //https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-masthead-logo
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -103,6 +114,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
     # header:
     #   image: splash/1.jpg      
   # _pages
@@ -121,3 +133,12 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+  
+  #COMMENTS
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-dark" #"github-light", "github-dark"
+    issue_term: "pathname"
+    label: "comment" # Optional - must be existing label.
