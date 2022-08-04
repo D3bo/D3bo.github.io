@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Giovanni De Bona"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Esplorando il mondo .Net"
+  bio    : ""
   links:
     #- label: "CV"
     # icon: "fas fa-fw fa-link"
